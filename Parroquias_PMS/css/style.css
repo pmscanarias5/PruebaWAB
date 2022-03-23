@@ -1,0 +1,15 @@
+.jimu-widget-parroquias .cajasSelect{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.jimu-widget-parroquias #cajaWidget{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.jimu-widget-parroquias .elemento{
+    margin: 5px;
+}

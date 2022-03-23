@@ -1,0 +1,77 @@
+<div id="cajaWidget">
+    
+    <h1>Seleccionador de concellos y parroquias</h1>
+    <hr>
+
+    <div class="cajasSelect">
+        <label style="margin: 5px;">Provincia: </label>
+        <select
+        data-dojo-attach-point="selectProvincia"
+        data-dojo-attach-event="onChange: cargaConcellos"
+        style=" height: 18px; margin-left: 12px; position: relative; top: 4px;">
+            <option value="-1">Seleccione Provincia</option>
+            <option value="15" text="A Coruña">A Coruña</option>
+            <option value="27" text="Lugo">Lugo</option>
+            <option value="32" text="Ourense">Ourense</option>
+            <option value="36" text="Pontevedra">Pontevedra</option>
+        </select>
+
+
+    </div>
+
+
+
+    <div data-dojo-attach-point="concellos" style="display: none;" class="cajasSelect" id="cajaConcellos">
+        <label class="elemento" style="margin: 5px;">Concellos: </label>
+        <select
+        class="elemento"
+        data-dojo-attach-point="listaConcellos"
+        data-dojo-attach-event="onchange: cargaParroquias"
+        style="margin: 5px;"></select>
+        </select>
+        <button
+        class="elemento"
+        class="btn btn-light"
+        data-dojo-attach-event="onclick: zoomConcello">
+            <img
+                src="widgets/Parroquias/images/lupa.png"
+                alt="Lupa Búsqueda"
+                style="height: 15px;">
+        </button>
+
+    </div>
+
+    <div data-dojo-attach-point="parroquias" style="display: none;" class="cajasSelect" id="cajaParroquias">
+        <label class="elemento">Parroquias: </label>
+        <select
+        class="elemento"
+        data-dojo-attach-point="listaParroquias"
+        style="max-width: 220px; margin-left: 3px;">
+        </select>
+        <button
+        class="elemento"
+        class="btn btn-light"
+        data-dojo-attach-event="onclick: zoomParroquia">
+            <img
+                src="widgets/Parroquias/images/lupa.png"
+                alt="Lupa Búsqueda"
+                style="height: 15px;">
+        </button>
+    </div>
+
+    
+
+
+    
+
+
+    <img                
+    src="https://www.xunta.gal/ficheiros/identidade-corporativa/2021/marca-principal/marca-positivo.png"
+    alt="Xunta Galicia"
+    style="height: 75px; width: 300px; position: absolute; top: 250px; margin-left: 16px;">
+    
+
+
+
+
+</div>
